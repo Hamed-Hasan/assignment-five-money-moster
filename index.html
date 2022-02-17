@@ -19,57 +19,71 @@
     <div class="container p-5">
         <div class="row g-5">
             <div class="title">
+                <!-- Main Title  -->
                 <h1 class="display-3 text-info fw-bold text-center">Budget Calculation<img class="img-symbol"
                         src="images/Money Master💰.png" alt=""></h1>
             </div>
             <div class="col-xl-6">
+                <!-- Main Background Image  -->
                 <img src="images/money.jpg" class="img-money" alt="">
             </div>
             <div class="col-xl-6">
                 <div class="calculate-bg px-5 py-5">
+                    <!-- Calculate Section  -->
                     <div class="row g-3">
                         <p class="h3 text-center my-4">Income</p>
                         <div class="col-4 text-end pt-2 fs-5 fw-bold">
                             Income:
                         </div>
                         <div class="col-8">
-                            <input  id="income" type="text" class="form-control money-input" placeholder="Enter Income">
+                            <input id="income" type="text" class="form-control money-input" placeholder="Enter Income">
                         </div>
                         <p class="h3 text-center my-4">Expenses</p>
                         <div class="col-4 text-end pt-2 fs-5 fw-bold">
                             Food:
                         </div>
                         <div class="col-8">
-                            <input id="food" type="text" class="form-control money-input" placeholder="Enter Food Price">
+                            <input id="food" type="text" class="form-control money-input"
+                                placeholder="Enter Food Price">
                         </div>
                         <div class="col-4 text-end pt-2 fs-5 fw-bold">
                             Rent:
                         </div>
                         <div class="col-8">
-                            <input  id="rent" type="text" class="form-control money-input" placeholder="Enter Rent Price">
+                            <input id="rent" type="text" class="form-control money-input"
+                                placeholder="Enter Rent Price">
                         </div>
                         <div class="col-4 text-end pt-2 fs-5 fw-bold">
                             Clothes:
                         </div>
                         <div class="col-8">
-                            <input id="clothes" type="text" class="form-control money-input" placeholder="Enter Clothes">
+                            <input id="clothes" type="text" class="form-control money-input"
+                                placeholder="Enter Clothes">
                         </div>
 
                         <div class="total-calculate text-center">
-                            <button class="btn btn-info text-white px-5 py-2 my-3 fs-4" id="calculate">Calculate</button>
+                            <p id="success" class="text-success notify">Great Calculate Total Number ✅</p>
+                            <p id="error" class="text-danger notify">Please Type Valid Number ❌</p>
+                            <button class="btn btn-info text-white px-5 py-2 my-3 fs-4"
+                                id="calculate">Calculate</button>
                             <p class="fw-bold fs-3">Total Expenses:<span id="total-expenses">0</span></p>
                             <p class="fw-bold fs-3">Balance:<span id="balance">0</span></p>
                         </div>
                     </div>
                     <div class="d-flex text-center justify-content-center align-items-center">
                         <p class="fw-bold">Save:</p>
-                        <p><input type="text" size="12" class="mx-2 form-control input-money" id="save-input" placeholder="Save Money"></p>
+                        <p><input type="text" size="12" class="mx-2 form-control input-money" id="save-input"
+                                placeholder="Save Money"></p>
                         <p class="fw-bold mx-3">%</p>
                         <p><button class="btn btn-info text-white px-5" id="save-btn">Save</button></p>
                     </div>
                     <div>
                         <p class="text-center fw-bold fs-3">Saving Amount:<span id="saving-amount">0</span></p>
                         <p class="text-center fw-bold fs-3">Remaining Balance:<span id="remaining-amount">0</span></p>
+                        <div class="text-center">
+                            <p id="successMsg" class="text-success notify">Great Calculate Total Number ✅</p>
+                            <p id="errorMsg" class="text-danger notify">Please Type Valid Number ❌</p>
+                        </div>
                     </div>
                 </div>
             </div>

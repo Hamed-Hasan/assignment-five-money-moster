@@ -25,3 +25,7 @@ input.form-control.money-input {
     width: 100%;
     height: 100%;
 }
+
+.notify{
+    display: none
+}
