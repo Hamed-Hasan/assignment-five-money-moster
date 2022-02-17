@@ -33,43 +33,43 @@
                             Income:
                         </div>
                         <div class="col-8">
-                            <input type="text" class="form-control money-input">
+                            <input  id="income" type="text" class="form-control money-input" placeholder="Enter Income">
                         </div>
                         <p class="h3 text-center my-4">Expenses</p>
                         <div class="col-4 text-end pt-2 fs-5 fw-bold">
                             Food:
                         </div>
                         <div class="col-8">
-                            <input type="text" class="form-control money-input">
+                            <input id="food" type="text" class="form-control money-input" placeholder="Enter Food Price">
                         </div>
                         <div class="col-4 text-end pt-2 fs-5 fw-bold">
                             Rent:
                         </div>
                         <div class="col-8">
-                            <input type="text" class="form-control money-input">
+                            <input  id="rent" type="text" class="form-control money-input" placeholder="Enter Rent Price">
                         </div>
                         <div class="col-4 text-end pt-2 fs-5 fw-bold">
                             Clothes:
                         </div>
                         <div class="col-8">
-                            <input type="text" class="form-control money-input">
+                            <input id="clothes" type="text" class="form-control money-input" placeholder="Enter Clothes">
                         </div>
 
                         <div class="total-calculate text-center">
-                            <button class="btn btn-info text-white px-5 py-2 my-3 fs-4">Calculate</button>
-                            <p class="fw-bold fs-3">Total Expenses:</p>
-                            <p class="fw-bold fs-3">Balance:</p>
+                            <button class="btn btn-info text-white px-5 py-2 my-3 fs-4" id="calculate">Calculate</button>
+                            <p class="fw-bold fs-3">Total Expenses:<span id="total-expenses">0</span></p>
+                            <p class="fw-bold fs-3">Balance:<span id="balance">0</span></p>
                         </div>
                     </div>
                     <div class="d-flex text-center justify-content-center align-items-center">
                         <p class="fw-bold">Save:</p>
-                        <p><input type="text" size="12" class="mx-2 form-control input-money"></p>
+                        <p><input type="text" size="12" class="mx-2 form-control input-money" id="save-input" placeholder="Save Money"></p>
                         <p class="fw-bold mx-3">%</p>
-                        <p><button class="btn btn-info text-white px-5">Save</button></p>
+                        <p><button class="btn btn-info text-white px-5" id="save-btn">Save</button></p>
                     </div>
                     <div>
-                        <p class="text-center fw-bold fs-3">Saving Amount:</p>
-                        <p class="text-center fw-bold fs-3">emaining Balance:</p>
+                        <p class="text-center fw-bold fs-3">Saving Amount:<span id="saving-amount">0</span></p>
+                        <p class="text-center fw-bold fs-3">Remaining Balance:<span id="remaining-amount">0</span></p>
                     </div>
                 </div>
             </div>
